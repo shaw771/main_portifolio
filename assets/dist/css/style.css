@@ -1,0 +1,41 @@
+.img-perfil{
+height: 300px;
+width: 300px;
+float: right; 
+}
+.navbar-dark{
+    margin-bottom: 2px;
+    background-color: rgb(113 55 244) !important;
+}
+.about{
+font-size: 18px;
+color: #858591;
+}
+.navbar-collapse{font-size: 20px;}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #713fef !important;
+    --bs-btn-border-color: #713fef!important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6029eb!important;
+    --bs-btn-hover-border-color: #6029eb!important;}
+    .habilidade-div{
+        font-size: 50px;
+    }
+    .habilidade-div p{
+        font-size: 30px;
+    }
+    .navbar-collapse h3{ text-align: center;}
+    
+    .bloco-contato:hover{
+        background-color:  #713fef;
+    }
+    .bloco-skills:hover{
+        background-color:  #713fef;
+    }
+
+  @media (max-width: 750px) {
+    .habilidade-div p {
+        font-size: 20px;
+    }
+}
