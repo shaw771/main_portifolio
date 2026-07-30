@@ -80,3 +80,18 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+.hero-title{
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero-subtitle{
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    color:#6c757d;
+}
+
+.hero-name{
+    color:#0d6efd;
+}
