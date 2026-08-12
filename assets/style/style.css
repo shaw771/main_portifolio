@@ -89,6 +89,21 @@
   text-decoration: none;
 }
 
+/* Separadores discretos entre os meios de contato. */
+.bloco-contato + .bloco-contato {
+  border-left: 1px solid rgba(0, 0, 0, .15);
+}
+
+@media (max-width: 767.98px) {
+  .bloco-contato:nth-of-type(odd) {
+    border-left: 0;
+  }
+
+  .bloco-contato:nth-of-type(n + 3) {
+    border-top: 1px solid rgba(0, 0, 0, .15);
+  }
+}
+
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
