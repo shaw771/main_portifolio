@@ -77,6 +77,11 @@
   border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
 }
 
+.btn-outline-secondary a,
+.btn-outline-secondary a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 /* Mantém os cartões de contato sem a cor e o sublinhado padrão dos links. */
 .bloco-contato a,
 .bloco-contato a:visited {
