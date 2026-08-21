@@ -106,17 +106,25 @@
         if (!url) return '';
 
         const cleaned = url.trim().replace(/\\/g, '/');
-        const isInsidePagesFolder = window.location.pathname.includes('/pages/');
-
-        if (cleaned.startsWith('./page-project/')) {
-          return isInsidePagesFolder ? '../' + cleaned.slice(2) : cleaned;
+        if (/^(https?:)?\/\//.test(cleaned) || cleaned.startsWith('data:')) {
+          return cleaned;
         }
 
-        if (cleaned.startsWith('page-project/')) {
-          return isInsidePagesFolder ? '../' + cleaned : cleaned;
+        const pathname = window.location.pathname.replace(/\/+$/, '');
+        const isInsidePagesFolder = pathname.endsWith('/pages');
+        const isLocalEnv = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const repoBase = isLocalEnv ? '' : '/main_portifolio';
+        const pageBase = isInsidePagesFolder ? `${repoBase}/pages/` : `${repoBase}/`;
+
+        if (cleaned.startsWith('/')) {
+          return `${repoBase}${cleaned}`;
         }
 
-        return cleaned;
+        try {
+          return new URL(cleaned, `https://example.com${pageBase}`).pathname;
+        } catch (error) {
+          return cleaned;
+        }
       };
 
       const initializeProjects = () => {
