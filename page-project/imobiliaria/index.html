@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prime Imóveis - Sua imobiliária de confiança para compra, venda e aluguel de imóveis de alto padrão">
+    <meta name="keywords" content="imóveis, compra, venda, aluguel, imobiliária, corretor">
+
+    <!-- TÍTULO DA PÁGINA - Editável -->
+    <title>Prime Imóveis - Sua Imobiliária de Confiança</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER / NAVEGAÇÃO -->
+    <!-- ============================================ -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- LOGO - Editável -->
+            <a href="#home" class="nav__logo">
+                <span class="logo-emoji">🏠</span>
+                <span class="logo-text">Prime Imóveis</span>
+            </a>
+
+            <!-- MENU DE NAVEGAÇÃO - Editável: adicione ou remova itens conforme necessário -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#servicos" class="nav__link">Serviços</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#destaques" class="nav__link">Destaques</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#depoimentos" class="nav__link">Depoimentos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contato" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Botão fechar menu mobile -->
+                <div class="nav__close" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Botão toggle menu mobile -->
+            <div class="nav__toggle" id="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO HERO / BANNER PRINCIPAL -->
+    <!-- ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <!-- TÍTULO PRINCIPAL - Editável -->
+                <h1 class="hero__title">
+                    Encontre o Imóvel dos Seus <span class="highlight">Sonhos</span>
+                </h1>
+
+                <!-- SUBTÍTULO - Editável -->
+                <p class="hero__description">
+                    Especialistas em imóveis de alto padrão. Experiência, confiança e dedicação para realizar seu melhor negócio.
+                </p>
+
+                <!-- BOTÕES DE AÇÃO - Editável: modifique textos e links -->
+                <div class="hero__buttons">
+                    <a href="#destaques" class="btn btn-primary">Ver Imóveis</a>
+                    <a href="#contato" class="btn btn-secondary">Fale Conosco</a>
+                </div>
+
+                <!-- ESTATÍSTICAS - Editável: altere números e textos -->
+                <div class="hero__stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">500+</h3>
+                        <p class="stat-label">Imóveis Vendidos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">15+</h3>
+                        <p class="stat-label">Anos de Experiência</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">Clientes Satisfeitos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__image">
+                <!-- IMAGEM DO HERO - Editável: substitua o background no CSS ou adicione tag img aqui -->
+                <div class="hero__image-bg">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Imóvel de Luxo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO SOBRE -->
+    <!-- ============================================ -->
+    <section class="sobre section" id="sobre">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">Conheça a</span>
+                <h2 class="section__title">Prime Imóveis</h2>
+            </div>
+
+            <div class="sobre__container">
+                <div class="sobre__image">
+                    <!-- IMAGEM SOBRE - Editável: adicione imagem real aqui -->
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Escritório Prime Imóveis">
+                </div>
+
+                <div class="sobre__content">
+                    <!-- TEXTO SOBRE - Editável: personalize o conteúdo -->
+                    <h3 class="sobre__subtitle">Excelência em Negócios Imobiliários</h3>
+                    <p class="sobre__text">
+                        A <strong>Prime Imóveis</strong> é referência no mercado imobiliário há mais de 15 anos, oferecendo soluções completas para quem deseja comprar, vender ou alugar imóveis de alto padrão.
+                    </p>
+                    <p class="sobre__text">
+                        Nossa equipe de corretores especializados está preparada para atender suas necessidades com profissionalismo, transparência e dedicação total. Trabalhamos com um portfólio exclusivo de imóveis cuidadosamente selecionados.
+                    </p>
+
+                    <!-- LISTA DE DIFERENCIAIS - Editável -->
+                    <ul class="sobre__list">
+                        <li class="sobre__list-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Equipe altamente qualificada
+                        </li>
+                        <li class="sobre__list-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Portfólio exclusivo de imóveis premium
+                        </li>
+                        <li class="sobre__list-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Atendimento personalizado e transparente
+                        </li>
+                        <li class="sobre__list-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Assessoria completa do início ao fim
+                        </li>
+                    </ul>
+
+                    <a href="#contato" class="btn btn-primary">Fale com Especialista</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- GALERIA DE IMÓVEIS -->
+    <!-- ============================================ -->
+    <section class="galeria section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Portfólio</span>
+                <h2 class="section__title">Nossos Imóveis</h2>
+            </div>
+            <div class="galeria__grid">
+                <div class="galeria__item galeria__item--large">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Casa de Luxo">
+                </div>
+                <div class="galeria__item">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Apartamento Moderno">
+                </div>
+                <div class="galeria__item">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Casa com Piscina">
+                </div>
+                <div class="galeria__item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Interior Elegante">
+                </div>
+                <div class="galeria__item">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Vista Panorâmica">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO SERVIÇOS -->
+    <!-- ============================================ -->
+    <section class="servicos section" id="servicos">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">O que fazemos</span>
+                <h2 class="section__title">Nossos Serviços</h2>
+                <p class="section__description">Soluções completas para todas as suas necessidades imobiliárias</p>
+            </div>
+
+            <!-- GRID DE SERVIÇOS - Editável: adicione, remova ou modifique serviços -->
+            <div class="servicos__grid">
+                <!-- Serviço 1 - Editável -->
+                <div class="servico-card">
+                    <div class="servico-card__image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80" alt="Compra de Imóveis">
+                    </div>
+                    <div class="servico-card__icon">🏘️</div>
+                    <h3 class="servico-card__title">Compra de Imóveis</h3>
+                    <p class="servico-card__description">
+                        Encontramos o imóvel perfeito para você com as melhores condições do mercado.
+                    </p>
+                </div>
+
+                <!-- Serviço 2 - Editável -->
+                <div class="servico-card">
+                    <div class="servico-card__image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80" alt="Venda de Imóveis">
+                    </div>
+                    <div class="servico-card__icon">💰</div>
+                    <h3 class="servico-card__title">Venda de Imóveis</h3>
+                    <p class="servico-card__description">
+                        Vendemos seu imóvel rapidamente pelo melhor preço com nossa estratégia comprovada.
+                    </p>
+                </div>
+
+                <!-- Serviço 3 - Editável -->
+                <div class="servico-card">
+                    <div class="servico-card__image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80" alt="Aluguel">
+                    </div>
+                    <div class="servico-card__icon">🔑</div>
+                    <h3 class="servico-card__title">Aluguel</h3>
+                    <p class="servico-card__description">
+                        Locação e administração de imóveis com total segurança e praticidade.
+                    </p>
+                </div>
+
+                <!-- Serviço 4 - Editável -->
+                <div class="servico-card">
+                    <div class="servico-card__image">
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=400&q=80" alt="Avaliação">
+                    </div>
+                    <div class="servico-card__icon">📊</div>
+                    <h3 class="servico-card__title">Avaliação</h3>
+                    <p class="servico-card__description">
+                        Avaliação precisa e detalhada do valor de mercado do seu imóvel.
+                    </p>
+                </div>
+
+                <!-- Serviço 5 - Editável -->
+                <div class="servico-card">
+                    <div class="servico-card__image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80" alt="Financiamento">
+                    </div>
+                    <div class="servico-card__icon">🏦</div>
+                    <h3 class="servico-card__title">Financiamento</h3>
+                    <p class="servico-card__description">
+                        Assessoria completa para aprovação do seu financiamento imobiliário.
+                    </p>
+                </div>
+
+                <!-- Serviço 6 - Editável -->
+                <div class="servico-card">
+                    <div class="servico-card__image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&q=80" alt="Assessoria Jurídica">
+                    </div>
+                    <div class="servico-card__icon">⚖️</div>
+                    <h3 class="servico-card__title">Assessoria Jurídica</h3>
+                    <p class="servico-card__description">
+                        Suporte jurídico especializado para garantir segurança em todas as transações.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO DESTAQUES (IMÓVEIS EM DESTAQUE) -->
+    <!-- ============================================ -->
+    <section class="destaques section" id="destaques">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">Oportunidades</span>
+                <h2 class="section__title">Imóveis em Destaque</h2>
+                <p class="section__description">Conheça nosso portfólio exclusivo de imóveis selecionados</p>
+            </div>
+
+            <!-- GRID DE IMÓVEIS - Editável: adicione ou remova imóveis conforme necessário -->
+            <div class="destaques__grid">
+                <!-- Imóvel 1 - Editável -->
+                <div class="imovel-card">
+                    <div class="imovel-card__image">
+                        <!-- IMAGEM DO IMÓVEL - Editável: adicione background-image no CSS ou tag img -->
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Apartamento de Alto Padrão">
+                        <span class="imovel-card__badge">Destaque</span>
+                    </div>
+                    <div class="imovel-card__content">
+                        <h3 class="imovel-card__title">Apartamento de Alto Padrão</h3>
+                        <p class="imovel-card__location">📍 Jardins, São Paulo - SP</p>
+                        <div class="imovel-card__features">
+                            <span class="feature">🛏️ 3 quartos</span>
+                            <span class="feature">🚗 2 vagas</span>
+                            <span class="feature">📏 150m²</span>
+                        </div>
+                        <div class="imovel-card__footer">
+                            <p class="imovel-card__price">R$ 1.200.000</p>
+                            <a href="#contato" class="btn btn-small">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imóvel 2 - Editável -->
+                <div class="imovel-card">
+                    <div class="imovel-card__image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Casa em Condomínio Fechado">
+                        <span class="imovel-card__badge badge-vendido">Vendido</span>
+                    </div>
+                    <div class="imovel-card__content">
+                        <h3 class="imovel-card__title">Casa em Condomínio Fechado</h3>
+                        <p class="imovel-card__location">📍 Alphaville, Barueri - SP</p>
+                        <div class="imovel-card__features">
+                            <span class="feature">🛏️ 4 quartos</span>
+                            <span class="feature">🚗 4 vagas</span>
+                            <span class="feature">📏 320m²</span>
+                        </div>
+                        <div class="imovel-card__footer">
+                            <p class="imovel-card__price">R$ 2.500.000</p>
+                            <a href="#contato" class="btn btn-small">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imóvel 3 - Editável -->
+                <div class="imovel-card">
+                    <div class="imovel-card__image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Cobertura Duplex Premium">
+                        <span class="imovel-card__badge">Lançamento</span>
+                    </div>
+                    <div class="imovel-card__content">
+                        <h3 class="imovel-card__title">Cobertura Duplex Premium</h3>
+                        <p class="imovel-card__location">📍 Moema, São Paulo - SP</p>
+                        <div class="imovel-card__features">
+                            <span class="feature">🛏️ 4 suítes</span>
+                            <span class="feature">🚗 3 vagas</span>
+                            <span class="feature">📏 280m²</span>
+                        </div>
+                        <div class="imovel-card__footer">
+                            <p class="imovel-card__price">R$ 3.800.000</p>
+                            <a href="#contato" class="btn btn-small">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imóvel 4 - Editável -->
+                <div class="imovel-card">
+                    <div class="imovel-card__image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Apartamento Moderno">
+                        <span class="imovel-card__badge">Novo</span>
+                    </div>
+                    <div class="imovel-card__content">
+                        <h3 class="imovel-card__title">Apartamento Moderno</h3>
+                        <p class="imovel-card__location">📍 Pinheiros, São Paulo - SP</p>
+                        <div class="imovel-card__features">
+                            <span class="feature">🛏️ 2 quartos</span>
+                            <span class="feature">🚗 1 vaga</span>
+                            <span class="feature">📏 95m²</span>
+                        </div>
+                        <div class="imovel-card__footer">
+                            <p class="imovel-card__price">R$ 850.000</p>
+                            <a href="#contato" class="btn btn-small">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imóvel 5 - Editável -->
+                <div class="imovel-card">
+                    <div class="imovel-card__image">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Terreno em Condomínio">
+                        <span class="imovel-card__badge badge-vendido">Vendido</span>
+                    </div>
+                    <div class="imovel-card__content">
+                        <h3 class="imovel-card__title">Terreno em Condomínio</h3>
+                        <p class="imovel-card__location">📍 Granja Viana, Cotia - SP</p>
+                        <div class="imovel-card__features">
+                            <span class="feature">🌳 Arborizado</span>
+                            <span class="feature">🏞️ Vista</span>
+                            <span class="feature">📏 600m²</span>
+                        </div>
+                        <div class="imovel-card__footer">
+                            <p class="imovel-card__price">R$ 680.000</p>
+                            <a href="#contato" class="btn btn-small">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imóvel 6 - Editável -->
+                <div class="imovel-card">
+                    <div class="imovel-card__image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Sala Comercial">
+                        <span class="imovel-card__badge">Destaque</span>
+                    </div>
+                    <div class="imovel-card__content">
+                        <h3 class="imovel-card__title">Sala Comercial</h3>
+                        <p class="imovel-card__location">📍 Av. Paulista, São Paulo - SP</p>
+                        <div class="imovel-card__features">
+                            <span class="feature">🏢 Escritório</span>
+                            <span class="feature">🚗 2 vagas</span>
+                            <span class="feature">📏 120m²</span>
+                        </div>
+                        <div class="imovel-card__footer">
+                            <p class="imovel-card__price">R$ 950.000</p>
+                            <a href="#contato" class="btn btn-small">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destaques__cta">
+                <a href="#contato" class="btn btn-primary">Ver Todos os Imóveis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO BENEFÍCIOS -->
+    <!-- ============================================ -->
+    <section class="beneficios section">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">Por que nos escolher</span>
+                <h2 class="section__title">Benefícios Prime Imóveis</h2>
+            </div>
+
+            <!-- GRID DE BENEFÍCIOS - Editável -->
+            <div class="beneficios__grid">
+                <!-- Benefício 1 - Editável -->
+                <div class="beneficio-card">
+                    <div class="beneficio-card__icon">✨</div>
+                    <h3 class="beneficio-card__title">Atendimento Personalizado</h3>
+                    <p class="beneficio-card__description">
+                        Cada cliente é único. Oferecemos soluções sob medida para suas necessidades específicas.
+                    </p>
+                </div>
+
+                <!-- Benefício 2 - Editável -->
+                <div class="beneficio-card">
+                    <div class="beneficio-card__icon">🎯</div>
+                    <h3 class="beneficio-card__title">Resultados Garantidos</h3>
+                    <p class="beneficio-card__description">
+                        Nossa experiência e método comprovado garantem os melhores resultados em suas negociações.
+                    </p>
+                </div>
+
+                <!-- Benefício 3 - Editável -->
+                <div class="beneficio-card">
+                    <div class="beneficio-card__icon">🔒</div>
+                    <h3 class="beneficio-card__title">Segurança Jurídica</h3>
+                    <p class="beneficio-card__description">
+                        Toda documentação verificada e assessoria jurídica completa em todas as transações.
+                    </p>
+                </div>
+
+                <!-- Benefício 4 - Editável -->
+                <div class="beneficio-card">
+                    <div class="beneficio-card__icon">⚡</div>
+                    <h3 class="beneficio-card__title">Agilidade</h3>
+                    <p class="beneficio-card__description">
+                        Processos otimizados e equipe dedicada para tornar sua experiência rápida e eficiente.
+                    </p>
+                </div>
+
+                <!-- Benefício 5 - Editável -->
+                <div class="beneficio-card">
+                    <div class="beneficio-card__icon">💎</div>
+                    <h3 class="beneficio-card__title">Imóveis Exclusivos</h3>
+                    <p class="beneficio-card__description">
+                        Acesso a um portfólio premium de imóveis cuidadosamente selecionados.
+                    </p>
+                </div>
+
+                <!-- Benefício 6 - Editável -->
+                <div class="beneficio-card">
+                    <div class="beneficio-card__icon">📱</div>
+                    <h3 class="beneficio-card__title">Suporte 24/7</h3>
+                    <p class="beneficio-card__description">
+                        Nossa equipe está sempre disponível para tirar suas dúvidas e oferecer suporte.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO DEPOIMENTOS -->
+    <!-- ============================================ -->
+    <section class="depoimentos section" id="depoimentos">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">O que dizem</span>
+                <h2 class="section__title">Depoimentos de Clientes</h2>
+                <p class="section__description">A satisfação dos nossos clientes é nossa maior conquista</p>
+            </div>
+
+            <!-- GRID DE DEPOIMENTOS - Editável: adicione ou remova depoimentos -->
+            <div class="depoimentos__grid">
+                <!-- Depoimento 1 - Editável -->
+                <div class="depoimento-card">
+                    <div class="depoimento-card__rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="depoimento-card__text">
+                        "Excelente atendimento! A equipe da Prime Imóveis foi extremamente profissional e me ajudou a encontrar o apartamento perfeito. Recomendo muito!"
+                    </p>
+                    <div class="depoimento-card__author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Carlos Mendes">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Carlos Mendes</h4>
+                            <p class="author-role">Empresário</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 - Editável -->
+                <div class="depoimento-card">
+                    <div class="depoimento-card__rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="depoimento-card__text">
+                        "Vendi minha casa em tempo recorde e pelo valor que eu esperava. O trabalho de avaliação e marketing foi impecável. Parabéns!"
+                    </p>
+                    <div class="depoimento-card__author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Ana Paula Silva">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Ana Paula Silva</h4>
+                            <p class="author-role">Arquiteta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 - Editável -->
+                <div class="depoimento-card">
+                    <div class="depoimento-card__rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="depoimento-card__text">
+                        "Primeiro imóvel que comprei e fui super bem assessorado em todo o processo. A assessoria jurídica foi fundamental para minha segurança."
+                    </p>
+                    <div class="depoimento-card__author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Roberto Oliveira">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Roberto Oliveira</h4>
+                            <p class="author-role">Médico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 4 - Editável -->
+                <div class="depoimento-card">
+                    <div class="depoimento-card__rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="depoimento-card__text">
+                        "Atendimento excepcional do início ao fim. Conseguimos o financiamento rapidamente graças ao suporte da equipe. Muito obrigada!"
+                    </p>
+                    <div class="depoimento-card__author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Mariana Costa">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Mariana Costa</h4>
+                            <p class="author-role">Dentista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 5 - Editável -->
+                <div class="depoimento-card">
+                    <div class="depoimento-card__rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="depoimento-card__text">
+                        "Profissionalismo e transparência em todas as etapas. A Prime Imóveis superou minhas expectativas. Já indiquei para vários amigos!"
+                    </p>
+                    <div class="depoimento-card__author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Fernando Santos">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Fernando Santos</h4>
+                            <p class="author-role">Engenheiro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 6 - Editável -->
+                <div class="depoimento-card">
+                    <div class="depoimento-card__rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="depoimento-card__text">
+                        "Encontrei o imóvel comercial ideal para meu negócio. A localização era fundamental e eles entenderam exatamente o que eu precisava."
+                    </p>
+                    <div class="depoimento-card__author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Juliana Almeida">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Juliana Almeida</h4>
+                            <p class="author-role">Empresária</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO FAQ (PERGUNTAS FREQUENTES) -->
+    <!-- ============================================ -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">Tire suas dúvidas</span>
+                <h2 class="section__title">Perguntas Frequentes</h2>
+            </div>
+
+            <!-- LISTA DE PERGUNTAS - Editável: adicione ou remova perguntas -->
+            <div class="faq__container">
+                <!-- Pergunta 1 - Editável -->
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Como funciona o processo de compra de um imóvel?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>O processo inicia com a busca pelo imóvel ideal, seguido da análise de documentação, negociação de valores, aprovação de financiamento (se necessário) e finalização da escritura. Nossa equipe acompanha você em todas essas etapas, garantindo segurança e transparência.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 - Editável -->
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Quanto tempo leva para vender um imóvel?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>O tempo varia conforme o tipo de imóvel, localização e valor. Em média, com nossa estratégia de marketing e rede de contatos, conseguimos vender imóveis em 30 a 90 dias. Realizamos uma avaliação precisa e definimos uma estratégia personalizada para cada caso.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 - Editável -->
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Vocês auxiliam com financiamento imobiliário?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Sim! Temos parceria com os principais bancos e oferecemos assessoria completa para aprovação do seu financiamento. Auxiliamos na documentação, simulações e acompanhamos todo o processo até a aprovação final.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 - Editável -->
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Qual a diferença entre avaliação e preço de venda?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>A avaliação é uma análise técnica do valor de mercado do imóvel, considerando localização, características e comparações com imóveis similares. O preço de venda pode variar conforme estratégia, urgência e condições de negociação. Trabalhamos sempre para alcançar o melhor valor justo.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 - Editável -->
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Quais documentos são necessários para vender meu imóvel?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Os principais documentos são: escritura ou matrícula atualizada, IPTU, certidões negativas, comprovante de quitação de débitos condominiais (se aplicável), documentos pessoais e certidão de casamento. Nossa equipe fornece um checklist completo e auxilia na obtenção de todos os documentos necessários.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 6 - Editável -->
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Como funciona a assessoria jurídica?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Nossa assessoria jurídica analisa toda a documentação do imóvel, verifica pendências, elabora contratos e acompanha o processo de escritura. Garantimos que todas as transações sejam realizadas com total segurança jurídica e dentro das normas legais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO CONTATO -->
+    <!-- ============================================ -->
+    <section class="contato section" id="contato">
+        <div class="container">
+            <!-- TÍTULO DA SEÇÃO - Editável -->
+            <div class="section__header">
+                <span class="section__subtitle">Entre em contato</span>
+                <h2 class="section__title">Fale Conosco</h2>
+                <p class="section__description">Estamos prontos para atender você e realizar seus sonhos</p>
+            </div>
+
+            <div class="contato__container">
+                <!-- INFORMAÇÕES DE CONTATO - Editável -->
+                <div class="contato__info">
+                    <h3 class="contato__info-title">Nossos Canais</h3>
+                    <p class="contato__info-description">
+                        Entre em contato através de qualquer um dos nossos canais. Estamos prontos para atender você!
+                    </p>
+
+                    <!-- LISTA DE CONTATOS - Editável: adicione ou modifique informações -->
+                    <div class="contato__details">
+                        <!-- Telefone - Editável -->
+                        <div class="contato__detail-item">
+                            <div class="detail-icon">📞</div>
+                            <div class="detail-content">
+                                <h4>Telefone</h4>
+                                <p>(11) 3456-7890</p>
+                                <p>(11) 98765-4321</p>
+                            </div>
+                        </div>
+
+                        <!-- Email - Editável -->
+                        <div class="contato__detail-item">
+                            <div class="detail-icon">📧</div>
+                            <div class="detail-content">
+                                <h4>E-mail</h4>
+                                <p>contato@primeimoveis.com.br</p>
+                                <p>vendas@primeimoveis.com.br</p>
+                            </div>
+                        </div>
+
+                        <!-- Endereço - Editável -->
+                        <div class="contato__detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-content">
+                                <h4>Endereço</h4>
+                                <p>Av. Paulista, 1000 - Sala 501</p>
+                                <p>Bela Vista, São Paulo - SP</p>
+                            </div>
+                        </div>
+
+                        <!-- Horário - Editável -->
+                        <div class="contato__detail-item">
+                            <div class="detail-icon">🕐</div>
+                            <div class="detail-content">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sexta: 9h às 18h</p>
+                                <p>Sábado: 9h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociais - Editável -->
+                    <div class="contato__social">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                            <a href="#" class="social-link" aria-label="YouTube">🎥</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <!-- Coluna 1 - Sobre - Editável -->
+                <div class="footer__column">
+                    <a href="#home" class="footer__logo">
+                        <span class="logo-emoji">🏠</span>
+                        <span class="logo-text">Prime Imóveis</span>
+                    </a>
+                    <p class="footer__description">
+                        Sua imobiliária de confiança há mais de 15 anos. Realizando sonhos e fazendo os melhores negócios imobiliários.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube">🎥</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2 - Links Rápidos - Editável -->
+                <div class="footer__column">
+                    <h3 class="footer__title">Links Rápidos</h3>
+                    <ul class="footer__list">
+                        <li><a href="#sobre" class="footer__link">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="footer__link">Serviços</a></li>
+                        <li><a href="#destaques" class="footer__link">Imóveis</a></li>
+                        <li><a href="#depoimentos" class="footer__link">Depoimentos</a></li>
+                        <li><a href="#contato" class="footer__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 - Serviços - Editável -->
+                <div class="footer__column">
+                    <h3 class="footer__title">Serviços</h3>
+                    <ul class="footer__list">
+                        <li><a href="#servicos" class="footer__link">Compra de Imóveis</a></li>
+                        <li><a href="#servicos" class="footer__link">Venda de Imóveis</a></li>
+                        <li><a href="#servicos" class="footer__link">Aluguel</a></li>
+                        <li><a href="#servicos" class="footer__link">Avaliação</a></li>
+                        <li><a href="#servicos" class="footer__link">Financiamento</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4 - Contato - Editável -->
+                <div class="footer__column">
+                    <h3 class="footer__title">Contato</h3>
+                    <ul class="footer__contact">
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <span>(11) 3456-7890</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📧</span>
+                            <span>contato@primeimoveis.com.br</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>Av. Paulista, 1000 - Sala 501<br>São Paulo - SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright - Editável -->
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2024 Prime Imóveis. Todos os direitos reservados.
+                </p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Política de Privacidade</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer__legal-link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- BOTÃO SCROLL TO TOP -->
+    <!-- ============================================ -->
+    <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

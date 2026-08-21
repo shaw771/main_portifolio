@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sabor da Vila - A melhor pizzaria artesanal da região. Delivery rápido, ingredientes frescos e ambiente aconchegante.">
+    <title>Sabor da Vila | Pizzaria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- EDITÁVEL: Nome do negócio/logo -->
+                <a href="#inicio" class="logo">🍕 Sabor da Vila</a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Cardápio</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <!-- Hero com imagem de fundo em tela cheia -->
+    <section class="hero" id="inicio">
+        <!-- Imagem de fundo do hero -->
+        <div class="hero-background">
+            <!-- EDITÁVEL: Troque a URL da imagem pela sua própria -->
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&q=80" alt="Pizza artesanal deliciosa" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🔥 Aberto todos os dias</div>
+                <!-- EDITÁVEL: Título principal -->
+                <h1>Sabor da Vila – A melhor pizzaria artesanal da região</h1>
+                <!-- EDITÁVEL: Subtítulo -->
+                <p class="hero-subtitle">Delivery rápido, ingredientes frescos e ambiente aconchegante para toda a família. Mais de 10 anos servindo a melhor pizza da cidade!</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Fazer Pedido Agora</a>
+                    <!-- EDITÁVEL: Link do WhatsApp -->
+                    <a href="https://wa.me/5511999999999" class="btn btn-secondary" target="_blank">Falar no WhatsApp</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">+50.000</span>
+                        <span class="stat-label">Pizzas entregues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Anos de tradição</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Avaliação média</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Imagem circular em destaque -->
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Pizza saindo do forno" class="hero-main-image">
+                    <div class="floating-badge">Massa artesanal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <!-- Seção sobre com imagem do estabelecimento -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a Sabor da Vila</h2>
+                <p>Conheça nossa história e paixão pela pizza perfeita</p>
+            </div>
+            <div class="sobre-content">
+                <!-- Imagem da pizzaria/chef -->
+                <div class="sobre-image">
+                    <!-- EDITÁVEL: Imagem do estabelecimento ou equipe -->
+                    <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&q=80" alt="Chef preparando pizza artesanal">
+                </div>
+                <div class="sobre-info">
+                    <div class="sobre-text">
+                        <!-- EDITÁVEL: Texto sobre o negócio -->
+                        <p>Fundada em 2014, a <strong>Sabor da Vila</strong> nasceu do sonho de uma família italiana que queria trazer o verdadeiro sabor das pizzarias de Nápoles para o Brasil. Com receitas passadas de geração em geração, nossa massa artesanal é preparada diariamente com ingredientes selecionados.</p>
+                        <p>Hoje, somos referência na região, reconhecidos pela qualidade dos nossos ingredientes, pelo atendimento caloroso e pelo compromisso de entregar sempre uma experiência gastronômica inesquecível.</p>
+                    </div>
+                    <div class="sobre-features">
+                    <div class="feature">
+                        <div class="feature-icon">🍅</div>
+                        <h3>Ingredientes Frescos</h3>
+                        <p>Selecionamos os melhores ingredientes todos os dias</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">👨‍🍳</div>
+                        <h3>Receita Tradicional</h3>
+                        <p>Massa artesanal com fermentação natural de 48h</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Delivery Rápido</h3>
+                        <p>Entrega em até 45 minutos na região</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERIA ========== -->
+    <!-- Galeria de fotos do ambiente e pratos -->
+    <section class="galeria">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Galeria</h2>
+                <p>Conheça nosso ambiente e nossos pratos</p>
+            </div>
+            <div class="galeria-grid">
+                <!-- EDITÁVEL: Imagens da galeria -->
+                <div class="galeria-item grande">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Ambiente interno do restaurante">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&q=80" alt="Pizza pepperoni">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=80" alt="Pizza quatro queijos">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1552539618-7eec9b4d1796?w=400&q=80" alt="Forno a lenha">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=80" alt="Ingredientes frescos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVIÇOS / CARDÁPIO ========== -->
+    <!-- Cards de produtos com imagens reais -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Cardápio</h2>
+                <p>Conheça nossas opções e escolha sua favorita</p>
+            </div>
+            <div class="servicos-grid">
+                <!-- EDITÁVEL: Cards de serviços/produtos com imagens -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <!-- EDITÁVEL: Imagem do produto -->
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Pizza Margherita">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Pizzas Tradicionais</h3>
+                        <p>Sabores clássicos que conquistam paladares há mais de uma década. Mussarela, Calabresa, Margherita e muito mais.</p>
+                        <span class="preco">A partir de R$ 45,00</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=400&q=80" alt="Pizza Premium com Presunto de Parma">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Pizzas Premium</h3>
+                        <p>Criações exclusivas do chef com ingredientes importados. Experimente nossa Trufa Negra ou a especial Parma.</p>
+                        <span class="preco">A partir de R$ 69,00</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&q=80" alt="Lasanha caseira">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Massas Artesanais</h3>
+                        <p>Lasanhas, canelones e espaguetes preparados com molhos caseiros e muito sabor.</p>
+                        <span class="preco">A partir de R$ 38,00</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=400&q=80" alt="Bruschetta italiana">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Entradas e Saladas</h3>
+                        <p>Bruschettas, antepastos e saladas frescas para começar sua refeição com leveza.</p>
+                        <span class="preco">A partir de R$ 22,00</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=80" alt="Rodízio de pizzas variadas">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Rodízio de Pizzas</h3>
+                        <p>Todos os sábados e domingos, rodízio com mais de 30 sabores diferentes!</p>
+                        <span class="preco">R$ 59,90 por pessoa</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" alt="Ambiente para eventos">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Organizamos seu evento com cardápio personalizado. Confraternizações, aniversários e reuniões.</p>
+                        <span class="preco">Consulte valores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DESTAQUES ========== -->
+    <!-- Seção de destaques com imagens reais -->
+    <section class="destaques" id="destaques">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Destaques</h2>
+                <p>O que faz a Sabor da Vila ser a escolha certa</p>
+            </div>
+            <div class="destaques-grid">
+                <div class="destaque-card">
+                    <div class="destaque-image">
+                        <!-- EDITÁVEL: Imagem do destaque -->
+                        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=500&q=80" alt="Prêmio melhor pizzaria">
+                    </div>
+                    <div class="destaque-content">
+                        <h3>Melhor Pizzaria 2023</h3>
+                        <p>Eleita a melhor pizzaria da região pelo Guia Gastronômico Local.</p>
+                        <span class="destaque-badge">Prêmio Regional</span>
+                    </div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-image">
+                        <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?w=500&q=80" alt="Delivery de pizza">
+                    </div>
+                    <div class="destaque-content">
+                        <h3>+50.000 Deliveries</h3>
+                        <p>Entregas realizadas com sucesso no último ano, sempre no prazo.</p>
+                        <span class="destaque-badge">+40% vs ano anterior</span>
+                    </div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80" alt="Clientes satisfeitos">
+                    </div>
+                    <div class="destaque-content">
+                        <h3>4.9 de Avaliação</h3>
+                        <p>Nota média em plataformas de delivery e redes sociais.</p>
+                        <span class="destaque-badge">+2.000 avaliações</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFÍCIOS ========== -->
+    <section class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por Que Escolher a Sabor da Vila?</h2>
+                <p>Vantagens que fazem a diferença na sua experiência</p>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">⏱️</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Sua pizza quentinha em até 45 minutos ou a próxima é por nossa conta!</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">💳</div>
+                    <h3>Pagamento Facilitado</h3>
+                    <p>Aceitamos todos os cartões, PIX e dinheiro. Parcele em até 3x sem juros.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">🌿</div>
+                    <h3>Ingredientes Premium</h3>
+                    <p>Trabalhamos apenas com fornecedores selecionados e produtos de primeira linha.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Ambiente Familiar</h3>
+                    <p>Espaço kids, estacionamento próprio e área climatizada para sua comodidade.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">📱</div>
+                    <h3>Pedido Fácil</h3>
+                    <p>Peça pelo WhatsApp, telefone ou presencialmente. Atendimento ágil e simpático!</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">🎁</div>
+                    <h3>Programa Fidelidade</h3>
+                    <p>A cada 10 pizzas, ganhe 1 grátis! Acumule pontos a cada pedido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS ========== -->
+    <!-- Seção de depoimentos com fotos reais dos clientes -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <p>A satisfação de quem já experimentou o melhor sabor</p>
+            </div>
+            <div class="depoimentos-grid">
+                <!-- EDITÁVEL: Depoimentos dos clientes com fotos -->
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="avatar-image">
+                            <!-- EDITÁVEL: Foto do cliente -->
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Mariana Ribeiro">
+                        </div>
+                        <div class="depoimento-info">
+                            <h4>Mariana Ribeiro</h4>
+                            <span>Cliente há 5 anos</span>
+                        </div>
+                    </div>
+                    <p>"Simplesmente a melhor pizza que já comi! A massa é leve, crocante e o recheio é super generoso. Minha família inteira só pede aqui."</p>
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="avatar-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Carlos Santos">
+                        </div>
+                        <div class="depoimento-info">
+                            <h4>Carlos Santos</h4>
+                            <span>Empresário da região</span>
+                        </div>
+                    </div>
+                    <p>"Faço todos os eventos da minha empresa aqui. Atendimento impecável, preço justo e a qualidade é sempre consistente. Super recomendo!"</p>
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="avatar-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Ana Ferreira">
+                        </div>
+                        <div class="depoimento-info">
+                            <h4>Ana Ferreira</h4>
+                            <span>Cliente delivery</span>
+                        </div>
+                    </div>
+                    <p>"O delivery é super rápido e a pizza chega sempre quentinha. Os sabores premium são incríveis, vale cada centavo!"</p>
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="avatar-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Roberto Lima">
+                        </div>
+                        <div class="depoimento-info">
+                            <h4>Roberto Lima</h4>
+                            <span>Cliente há 3 anos</span>
+                        </div>
+                    </div>
+                    <p>"Ambiente super aconchegante e a equipe é muito atenciosa. Levo minha família todo domingo para o rodízio. Viramos fãs!"</p>
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre nossos serviços</p>
+            </div>
+            <div class="faq-list">
+                <!-- EDITÁVEL: Perguntas e respostas -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Vocês fazem delivery?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Fazemos delivery para toda a região. O tempo médio de entrega é de 30 a 45 minutos, dependendo da localidade. Pedidos acima de R$ 80,00 têm frete grátis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quais são as formas de pagamento?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceitamos dinheiro, PIX, cartões de débito e crédito (todas as bandeiras). No cartão de crédito, você pode parcelar em até 3x sem juros para compras acima de R$ 100,00.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        É necessário fazer reserva?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para dias de semana, geralmente não é necessário. Nos fins de semana e feriados, recomendamos reservar com antecedência pelo WhatsApp ou telefone para garantir sua mesa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Vocês têm opções vegetarianas e veganas?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Temos um cardápio especial com mais de 10 opções vegetarianas e 5 opções veganas. Nossa massa tradicional já é vegana, e oferecemos queijo vegano como opção.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Como funciona o rodízio?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O rodízio acontece aos sábados e domingos, das 18h às 23h. O valor é de R$ 59,90 por pessoa e inclui mais de 30 sabores de pizza, além de refrigerante à vontade. Crianças até 6 anos não pagam.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Vocês atendem eventos e festas?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Realizamos eventos corporativos, aniversários, confraternizações e festas em nosso espaço ou em domicílio. Entre em contato para um orçamento personalizado.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Qual o horário de funcionamento?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Funcionamos de terça a domingo, das 18h às 23h30. Segundas-feiras estamos fechados para manutenção. Em feriados, consulte nosso Instagram para horários especiais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Faça seu pedido ou reserve sua mesa agora mesmo</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <!-- EDITÁVEL: Informações de contato -->
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(11) 99999-9999</p>
+                            <a href="https://wa.me/5511999999999" class="btn btn-whatsapp" target="_blank">Chamar no WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <!-- EDITÁVEL: Endereço -->
+                            <p>Rua das Palmeiras, 1234 - Vila Nova<br>São Paulo - SP, 01234-567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <!-- EDITÁVEL: Horário -->
+                            <p>Terça a Domingo: 18h às 23h30<br>Segunda: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-mapa">
+                    <!-- Bloco simulando mapa -->
+                    <div class="mapa-placeholder">
+                        <div class="mapa-pin">📍</div>
+                        <p>Sabor da Vila</p>
+                        <span>Clique para ver no Google Maps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ÁREA RESERVADA PARA AGENTE DE IA ========== -->
+    <!-- Área reservada para agente de IA no futuro -->
+    <div id="ai-agent-container" class="ai-agent-area">
+        <!-- O widget do agente de IA será inserido aqui -->
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- EDITÁVEL: Nome do negócio -->
+                <div class="footer-logo">🍕 Sabor da Vila</div>
+                <p>A melhor pizzaria artesanal da região, desde 2014.</p>
+                <div class="footer-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Cardápio</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">👍</a>
+                    <a href="#" aria-label="WhatsApp">📱</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!-- EDITÁVEL: Copyright -->
+                <p>&copy; 2024 Sabor da Vila. Todos os direitos reservados.</p>
+                <p><a href="#privacidade">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Política de Privacidade (texto simples no rodapé) -->
+    <section class="privacidade" id="privacidade">
+        <div class="container">
+            <h3>Política de Privacidade</h3>
+            <p>A Sabor da Vila respeita sua privacidade. Os dados coletados são utilizados apenas para processamento de pedidos e comunicação com clientes. Não compartilhamos informações pessoais com terceiros sem consentimento.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
