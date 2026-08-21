@@ -5,7 +5,8 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 (function($) {
   $.fn.countdown = function(options, callback) {
     //custom 'this' selector
-    thisEl = $(this); 
+    var thisEl = $(this); 
+    var interval;
   
     // array of custom settings
     var settings = { 
@@ -26,6 +27,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     if(eventDate <= currentDate) {
     callback.call(this);
     clearInterval(interval);
+    return;
     }
       
     var seconds = eventDate - currentDate;
@@ -80,7 +82,6 @@ $("#countdown").countdown({
 
 function() {
 // This will run when the countdown ends
- alert("We're Out Now");
 });
      
        
