@@ -95,6 +95,7 @@
     </div>
 
     <script src="../assets/js/projects-data.js"></script>
+    <script src="../assets/js/project-thumbs.js"></script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       const projectGrid = document.getElementById('projectGrid');
@@ -127,15 +128,33 @@
         }
       };
 
+      const normalizeProjectAsset = (url) => {
+        if (!url) return '../assets/img/preview.jpeg';
+
+        const cleaned = url.trim().replace(/\\/g, '/');
+        if (/^(https?:)?\/\//.test(cleaned) || cleaned.startsWith('data:')) {
+          return cleaned;
+        }
+
+        const isLocalEnv = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const repoBase = isLocalEnv ? '' : '/main_portifolio';
+        return `${repoBase}/${cleaned.replace(/^\.\//, '').replace(/^\//, '')}`;
+      };
+
       const initializeProjects = () => {
         const sourceProjects = Array.isArray(window.projectEntries) ? window.projectEntries : [];
+        const thumbnails = new Map(
+          (Array.isArray(window.projectThumbs) ? window.projectThumbs : [])
+            .map(project => [project.name, project.thumb])
+        );
         projects = sourceProjects
           .filter(project => project && project.url)
           .map(project => ({
             title: project.title || project.name,
             description: 'Projeto criado e codificado no portfolio local.',
             badge: 'Projeto',
-            url: normalizeProjectUrl(project.url)
+            url: normalizeProjectUrl(project.url),
+            thumb: normalizeProjectAsset(thumbnails.get(project.name))
           }))
           .filter(project => project.url && project.url.length > 0);
 
@@ -159,7 +178,7 @@
         projectGrid.innerHTML = pageProjects.map(project => `
           <article class="project-card">
             <div class="project-cover" aria-label="Prévia do projeto ${project.title}">
-              <iframe src="${project.url}" title="Prévia do projeto ${project.title}" loading="lazy"></iframe>
+              <img src="${project.thumb}" alt="Imagem de prévia do projeto ${project.title}" loading="lazy" onerror="this.src='../assets/img/preview.jpeg'">
             </div>
             <div class="project-body">
               <div class="project-chip">${project.badge}</div>
