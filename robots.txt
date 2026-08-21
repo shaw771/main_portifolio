@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shaw771.github.io/main_portifolio/sitemap.xml
